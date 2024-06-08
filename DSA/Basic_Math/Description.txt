@@ -1,0 +1,2 @@
+* Strong Number
+* Perfect Number
