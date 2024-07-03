@@ -4,21 +4,13 @@ class GfG
     Node removeDuplicates(Node head)
     {
 	// Your code here
-	if(head==null || head.next==null) return head;
-	Node start=head;
-	Node temp=head.next;
-	while(temp!=null)
+	Node temp=head;
+	while(temp.next!=null)
 	{
-	    if(temp.data==start.data)
-	    {
-	        start.next=temp.next;
-	        temp=temp.next;
-	    }
+	    if(temp.data==temp.next.data)
+	        temp.next=temp.next.next;
 	    else
-	    {
-	        start=start.next;
 	        temp=temp.next;
-	    }
 	}
 	return head;
     }
