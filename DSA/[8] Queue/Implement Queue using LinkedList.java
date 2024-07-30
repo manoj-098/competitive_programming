@@ -1,5 +1,4 @@
 // Java program for linked-list implementation of queue
-
 // A linked list (LL) node to store a queue entry
 class QNode {
 	int key;
