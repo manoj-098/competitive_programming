@@ -10,6 +10,8 @@ class HelloWorld {
     {
         int start=0;
         int end=6;
+        //when no element greater than the target exists in the array
+        if(target>arr[end]) return -1;
         while(start<=end)
         {
             int mid=start+(end-start)/2;
