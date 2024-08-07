@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public boolean search(int[] nums, int target) {
         int pivot;
         if(nums.length==1) pivot=0;
