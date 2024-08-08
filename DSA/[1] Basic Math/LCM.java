@@ -33,7 +33,19 @@ class HelloWorld {
         return lcm(a, b, a);
     }
 }
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.   
 //LCM of Array of Numbers
 public class LCMOfArrayExample {
     public static int gcd(int a, int b) {
