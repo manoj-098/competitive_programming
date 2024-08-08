@@ -32,3 +32,36 @@ class HelloWorld {
         else return GCD(A,B-A);
     }
 }
+
+.
+.
+.
+.
+.
+.
+.
+//GCD of an Array of Numbers
+public class GCDOfArrayExample {
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static int gcdOfArray(int[] numbers) {
+        int gcdResult = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            gcdResult = gcd(gcdResult, numbers[i]);
+        }
+        return gcdResult;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = { 12, 15, 21 };
+        System.out.println("GCD of the array is: " + gcdOfArray(numbers));
+    }
+}
+
