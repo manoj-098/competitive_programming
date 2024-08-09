@@ -1,20 +1,23 @@
-public class PowerOfNumberExample {
-    public static double power(int base, int exponent) {
-        double result = 1;
-        if (exponent < 0) {
-            base = 1 / base;
-            exponent = -exponent;
+class Solution {
+    public double myPow(double x, int n) {
+        double ans = 1.0;
+        long nTemp = n;
+
+        if(n < 0)
+            nTemp = nTemp * -1;
+
+        while(nTemp > 0){
+            if(nTemp % 2 == 0){
+                x *= x;
+                nTemp /=2;
+            }
+            else{
+                ans *= x;
+                nTemp--;
+            }
         }
-
-        for (int i = 0; i < exponent; i++) {
-            result *= base;
-        }
-
-        return result;
-    }
-
-    public static void main(String[] args) {
-        int base = 2, exponent = 3;
-        System.out.println(base + " raised to the power of " + exponent + " is: " + power(base, exponent));
+        return n < 0 ? 1 / ans : ans;
     }
 }
+
+
