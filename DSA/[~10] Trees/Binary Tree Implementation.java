@@ -1,4 +1,4 @@
-//Insertion and display in B-Tree
+//Insertion and display in Binary Tree
 
 import java.util.*;
 
